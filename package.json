@@ -3,5 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Seth & Greg Donohue",
-  "license": "GNU AGPLv3"
+  "license": "GNU AGPLv3",
+  "scripts": {
+	"build": "webpack ./src/js/main.js ./dist/bundle.js"
+	},
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.8.1"
+  }
 }
