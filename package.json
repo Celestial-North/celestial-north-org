@@ -5,7 +5,8 @@
   "author": "Seth & Greg Donohue",
   "license": "GNU AGPLv3",
   "scripts": {
-    "build": "webpack ./src/js/main.js ./dist/bundle.js"
+    "build": "webpack ./src/js/main.js ./dist/bundle.js",
+	"sass": "sass --watch styles/:styles/"
   },
   "dependencies": {},
   "devDependencies": {}
