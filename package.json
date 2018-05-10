@@ -5,10 +5,15 @@
   "author": "Seth & Greg Donohue",
   "license": "GNU AGPLv3",
   "scripts": {
-	"build": "webpack ./src/js/main.js ./dist/bundle.js"
-	},
-  "dependencies": {},
+    "build": "webpack ./src/js/main.js ./dist/bundle.js"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
   "devDependencies": {
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
     "webpack": "^4.8.1"
   }
 }

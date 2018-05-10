@@ -2,7 +2,7 @@ const webpackConfig = module.exports = {};
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
 
-webpackConfig.entry = `${__dirname}/src/main.js`;
+webpackConfig.entry = `${__dirname}/main.js`;
 
 webpackConfig.output = {
   filename: 'bundle.[hash].js',
