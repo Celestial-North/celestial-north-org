@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Seth & Greg Donohue",
-  "license": "GNU AGPLv3",
+  "license": "AGPL-3.0",
   "scripts": {
     "build": "webpack ./src/js/main.js ./dist/bundle.js",
-	"sass": "sass --watch styles/:styles/"
+    "sass": "sass --watch styles/:styles/"
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0"
+  }
 }
