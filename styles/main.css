@@ -1,4 +1,172 @@
+body, html {
+  margin: 0; }
+
+a {
+  color: #71e5ff;
+  transition: all 500ms linear;
+  display: inline-block; }
+  a:hover {
+    text-decoration: none;
+    color: #71e5ff; }
+
+img {
+  margin: 1.5%; }
+
+h4 {
+  margin: 2% 1% 1% 1%; }
+
+#astro-on-tap {
+  width: 75%;
+  justify-self: center;
+  display: block;
+  margin: auto; }
+
+#img-ambassador {
+  width: 30%; }
+
+#img-ioyh {
+  width: 30%; }
+
+.flex-div {
+  display: flex;
+  align-items: center; }
+
 body {
-  background: linear-gradient(to right, white, #afecfa); }
+  display: block;
+  background-color: #323232;
+  color: white; }
+  body:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../assests/images/photo-1523336235051-4496f02d079a.jpeg);
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.2) blur(1.5px); }
+
+nav {
+  position: fixed;
+  top: 0;
+  max-width: inherit;
+  z-index: 2;
+  width: 98%;
+  background-color: #f0f0f0;
+  padding: 0 1% 0 1%;
+  margin: 0; }
+  nav #nav-bar {
+    max-width: 1080px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center; }
+    nav #nav-bar #nav-logo {
+      position: relative;
+      padding: 2%;
+      margin: 0 2% 0 20%;
+      width: 85%; }
+      @media only screen and (max-width: 800px) {
+        nav #nav-bar #nav-logo {
+          width: 100%; } }
+    nav #nav-bar ul {
+      display: grid;
+      margin-right: 1%;
+      grid-template-columns: repeat(auto-fill, 100px); }
+      nav #nav-bar ul li {
+        text-align: center;
+        list-style-type: none;
+        list-style-position: unset;
+        display: inline;
+        margin: 0.1vw;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        background-color: #323232; }
+        nav #nav-bar ul li:hover {
+          background-color: gray; }
+
+main {
+  margin: auto;
+  max-width: 1080px;
+  padding: 2%;
+  position: relative;
+  top: 100px;
+  display: grid;
+  grid-auto-columns: 20%;
+  align-items: flex-start; }
+  @media only screen and (max-width: 615px) {
+    main {
+      grid-auto-columns: 100%; } }
+  main header {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 375px;
+    grid-column: 1 / span 5; }
+    main header h1 {
+      padding-bottom: 50px; }
+    @media only screen and (max-width: 800px) {
+      main header h1 {
+        padding-bottom: 100px;
+        width: 50%; } }
+    @media only screen and (max-width: 615px) {
+      main header {
+        grid-column: 1; } }
+  main #mission {
+    grid-column: 1 / 4; }
+    @media only screen and (max-width: 615px) {
+      main #mission {
+        grid-column: 1;
+        grid-row: auto; } }
+  main #outreach-programs {
+    grid-column: 3 / 6;
+    grid-row: 3;
+    justify-content: flex-start;
+    text-align: right; }
+    main #outreach-programs article {
+      max-width: 500px;
+      display: inline-block; }
+      main #outreach-programs article img {
+        float: right; }
+    @media only screen and (max-width: 615px) {
+      main #outreach-programs {
+        grid-column: 1;
+        grid-row: auto; } }
+  main #media {
+    grid-column: 1 / span 2;
+    grid-row: 3; }
+    @media only screen and (max-width: 615px) {
+      main #media {
+        grid-column: 1;
+        grid-row: auto; } }
+  main #donations {
+    grid-column: 2 / 5;
+    grid-row: 4;
+    align-self: flex-end; }
+    main #donations h3 {
+      text-align: center;
+      margin-bottom: 5px; }
+    main #donations p {
+      margin-top: 5px;
+      padding: 1vw;
+      text-indent: 1vw; }
+    @media only screen and (max-width: 615px) {
+      main #donations {
+        grid-column: 1;
+        grid-row: auto; } }
+
+footer {
+  grid-column: 1 / 6;
+  grid-row: 5;
+  position: relative;
+  text-align: center; }
+  @media only screen and (max-width: 615px) {
+    footer {
+      grid-column: 1;
+      grid-row: auto; } }
 
 /*# sourceMappingURL=main.css.map */
